@@ -7,40 +7,35 @@
 </head>
 <body>
     <form>
-        고객명 : <input type="text"><br>
-        <br>
-        전화번호 : <input type="text"><br>
-        <br>
-        E-mail : <input type="email"><br>
-        <br>
-        피자선택:<select>
+        고객명 : <input type="text"><br><br>
+        <label>전화번호 : <input type="tel"></label><br><br>
+        <label for="input_email">E-mail : </label><input type="email" id="input_email"><br><br>
+        피자선택 : 
+        <select>
             <option value="피자">피자를선택하세요</option>
-            </select>
+            <option>치즈피자</option>
+            <option>페퍼로니피자</option>
+            <option>고구마피자</option>
+        </select>
+
         <fieldset>
             <legend>피자 사이즈</legend>
-            <label><input type="radio" name="pizaa">Small</label><br>
-            <br>
-            <label><input type="radio" name="pizaa">Medium</label><br>
-            <br>
-            <label><input type="radio" name="pizaa">Large</label><br>
-            <br>
+            <label><input type="radio" name="pizaa">Small</label><br><br>
+            <label><input type="radio" name="pizaa">Medium</label><br><br>
+            <label><input type="radio" name="pizaa">Large</label><br><br>
         </fieldset>
+
         <fieldset>
             <legend>토핑 선택</legend>
-            <input type="checkbox"><label>베이컨</label><br>
-            <br>
-            <input type="checkbox"><label>치즈</label><br>
-            <br>
-            <input type="checkbox"><label>양파</label><br>
-            <br>
-            <input type="checkbox"><label>버섯</label><br>
-            <br>
+            <label><input type="checkbox">베이컨</label><br><br>
+            <label><input type="checkbox">치즈</label><br><br>
+            <label><input type="checkbox">양파</label><br><br>
+            <label><input type="checkbox">버섯</label><br><br>
         </fieldset>
-        희망배송시간<input type="time"><br>
-        <br>
+
+        희망배송시간<input type="time"><br><br>
         <label>배송시 요청사항</label>
-        <textarea></textarea><br>
-        <br>
+        <textarea></textarea><br><br>
         <input type="submit" value="주문하기">
     </form>
 </body>
