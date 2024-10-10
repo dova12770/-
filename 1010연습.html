@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .container::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .inbox {
+            width: 50%;
+            border: 1px solid black;
+            float: left;
+            background-color: lightgray;
+        }
+        img {
+            width: 150px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inbox">
+            <img src="../html/image/snake-7256057_640.jpg" class="box-image">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quas quis neque necessitatibus provident voluptate esse ipsum aperiam. Qui soluta repudiandae itaque quos consequatur, fuga nobis tempora. Fuga, sit?</p>
+        </div>
+        <div class="inbox">
+            <img src="../html/image/plue.jpg">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quas quis neque necessitatibus provident voluptate esse ipsum aperiam. Qui soluta repudiandae itaque quos consequatur, fuga nobis tempora. Fuga, sit?</p>
+        </div>
+    </div>
+</body>
+</html>
