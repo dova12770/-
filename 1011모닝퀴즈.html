@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightgray;
+
+        }
+
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .container:hover .red {
+            width: 400px;
+        }
+
+        .container:hover .blue {
+            background-color: purple;
+        }
+
+        .container:hover .black {
+            left: 200px;
+        }
+
+        .red {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .black {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border: 1px solid black;
+            position: relative;
+            left: 0px;
+
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .green:hover {
+            border: 10px solid red;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .yellow {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .yellow:hover {
+            border: 10px solid red;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="black"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+
+</html>
