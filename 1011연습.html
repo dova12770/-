@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .stop{
+            width: 100px;
+            height: 50px;
+            background-color: lightgray;
+        }
+        .stop:hover ~ .box{
+            animation-play-state: paused;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+
+        .one {
+            animation-name: boxani;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate;
+        }
+
+        .two {
+            animation-name: boxani1;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate;
+        }
+
+        .three {
+            animation-name: boxani2;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes boxani {
+            0% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: orange;
+                left: 100px;
+            }
+
+            100% {
+                background-color: pink;
+                left: 200px;
+            }
+        }
+
+        @keyframes boxani1 {
+            0% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: orange;
+                top: 100px;
+            }
+
+            100% {
+                background-color: pink;
+                top: 200px;
+            }
+        }
+
+        @keyframes boxani2 {
+            0% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: orange;
+                top: 100px;
+                left: 100px;
+            }
+
+            100% {
+                background-color: pink;
+                top: 200px;
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stop">멈추기</div><br>
+    
+    <div class="box one"></div><br>
+    <div class="box two"></div><br>
+    <div class="box three"></div>
+</body>
+
+</html>
